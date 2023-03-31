@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+.home{
+    padding: 10px;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.headerImg{
+    width: 100px;
+}
+
+.numberOfSeatsContainer{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.numberOfSeatsButton, .addGroupBtn{
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #4e94f3;
+    color: white;
+    transition: background-color 0.2s ease-out;
+}
+
+.numberOfSeatsButton{
+    width: fit-content;
+}
+
+.addGroupBtn {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.addGroupBtn:hover, .numberOfSeatsButton:hover {
+    background-color: #2f69c8;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.displayNumberOfSeats > p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.headlines{
+    display: flex;
+    margin-top: 50px;
+    color: white;
+    padding: 0px 20px;
+    gap: 10px;
+}
+
+.headlineName, .headlinePersons{
+    width: 40%;
+    margin-right: 5px;
+}
+
+@media screen and (min-width: 768px){
+    .home{
+        padding: 20px;
+    }
+
+    .headerContainer{
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form, .headlines, .groupCards{
+        width: 1024px;
+    }
+}

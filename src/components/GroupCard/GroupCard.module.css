@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+.groupCard{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    background-color: #121212;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.6);
+    padding: 5px 20px;
+}
+
+.groupCard p{
+    word-break: break-all;
+    margin-right: 5px;
+    width: 40%;
+}
+
+.groupCardButtonContainer{
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.groupLeaveButton{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #FF1744;
+    border: none;
+    color: white;
+    transition: background-color 0.2s ease-out;
+}
+
+.groupLeaveButton:hover{
+    background-color: #C70039;
+}

@@ -1,0 +1,10 @@
+.field{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    padding: 5px 10px;
+    background-color: #CCCCCC;
+    border-radius: 5px;
+    color: black;
+}
