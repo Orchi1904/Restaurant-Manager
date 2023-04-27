@@ -38,7 +38,8 @@ function Home() {
         //Mark seats as occupied (false)
         const seatsArrCpy = [...seatsArr];
         for (let i = 0; i < numberOfPersons; i++) {
-            //-1 because of Array Index, %seatsArrCpy.length to continue with 0 when Array out of bounds
+            //-1 because of Array Index 
+            //%seatsArrCpy.length to continue with 0 when Array out of bounds
             const seatIndex = (firstSeat - 1 + i) % seatsArrCpy.length;
             seatsArrCpy[seatIndex] = false;
         }
